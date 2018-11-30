@@ -9,6 +9,10 @@ class TodosController < ApplicationController
     # @todo = Todo.new(todo_params)
   end
 
+  def show
+    @todo = Todo.find(params[:user_id])
+  end
+
   def edit
   end
 end
