@@ -2,11 +2,11 @@
 
 <% @todos.each do |todo| %>
     <li>
-        <%= todo.title %>
-        <%= todo.user.email %>
+        <%= todo.title %>:
+        <%= todo.description %>
         <%= link_to 'Delete', user_todo_path(current_user, todo), method: :delete %>
     </li>
 <% end %>
 
-
+</br>
 <%= link_to "New Todo", new_user_todo_path(current_user, @todo) %>

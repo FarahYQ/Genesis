@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 # Genesis
-# Graphs
+# resource: https://www.youtube.com/watch?v=UJl7pEE6t4c
