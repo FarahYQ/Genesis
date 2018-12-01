@@ -1,15 +1,10 @@
-require 'pry'
 class TodosController < ApplicationController
 
   before_action :authenticate_user!
   before_action :check_user
   def index
-    # if params[:user_id]
       @user = User.find(params[:user_id])
       @todos = @user.todos
-    # else 
-    #   @todos = Todo.all
-    # end
   end
 
   def new
@@ -25,6 +20,13 @@ class TodosController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    @user = User.find(params[:user_id])
+    @todo = @user.todos.find(params[:id])
+    @todo.destroy
+    redirect_to action: 'index'
   end
 
   def show
