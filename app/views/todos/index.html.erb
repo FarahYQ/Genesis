@@ -9,3 +9,5 @@
     <%= todo.user.email %>
 
 <% end %>
+
+<%= link_to "New Todo", new_user_todo_path(current_user, @todo) %>
