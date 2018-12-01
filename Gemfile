@@ -31,6 +31,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 # Use 'devise' for user authentication
 gem 'devise'
+# Add bootstrap
+gem 'bootstrap', '~> 4.1', '>= 4.1.3'
+# Add jquery
+gem 'jquery-rails'
 # User 'pry-rails' for testing in terminal
 gem 'pry-rails'
 
