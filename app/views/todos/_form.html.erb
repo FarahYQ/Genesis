@@ -1,5 +1,7 @@
 <%= form_with model: ([@user, @todo]) do |f| %>
+    Task Title: 
     <%= f.text_field :title %>
+    Task Description: 
     <%= f.text_field :description %>
 
     <%= f.submit %>
